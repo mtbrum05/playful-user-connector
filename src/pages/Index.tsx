@@ -7,7 +7,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -53,6 +55,19 @@ const Index = () => {
       setFile(selectedFile);
       toast.success("File uploaded successfully!");
     }
+  };
+
+  const handleSubmit = () => {
+    if (!file) {
+      toast.error("Please select a file first");
+      return;
+    }
+    toast.success("File submitted successfully!");
+  };
+
+  const handleCancel = () => {
+    setFile(null);
+    toast.info("Upload cancelled");
   };
 
   return (
@@ -108,6 +123,14 @@ const Index = () => {
               </label>
             </div>
           </CardContent>
+          <CardFooter className="flex justify-end gap-4">
+            <Button variant="outline" onClick={handleCancel}>
+              Cancelar
+            </Button>
+            <Button onClick={handleSubmit}>
+              Submit
+            </Button>
+          </CardFooter>
         </Card>
       </div>
     </div>
