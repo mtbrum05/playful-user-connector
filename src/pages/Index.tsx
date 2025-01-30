@@ -75,7 +75,7 @@ const Index = () => {
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader>
-            <CardTitle>Upload Document</CardTitle>
+            <CardTitle>Enviar Documento</CardTitle>
             <CardDescription>
               Upload your PNG or PDF document (max 5MB)
             </CardDescription>
@@ -118,7 +118,7 @@ const Index = () => {
                   )}
                 </div>
                 <div className="mt-1 text-xs text-gray-500">
-                  Supported formats: PNG, PDF
+                  Formatos suportados: PNG, PDF
                 </div>
               </label>
             </div>
