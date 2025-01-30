@@ -128,7 +128,7 @@ const Index = () => {
               Cancelar
             </Button>
             <Button onClick={handleSubmit}>
-              Submit
+              Enviar
             </Button>
           </CardFooter>
         </Card>
