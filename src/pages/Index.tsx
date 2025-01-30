@@ -123,7 +123,7 @@ const Index = () => {
               </label>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-end gap-4">
+          <CardFooter className="flex justify-center gap-4">
             <Button variant="outline" onClick={handleCancel}>
               Cancelar
             </Button>
